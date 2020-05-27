@@ -1,0 +1,103 @@
+header 
+    {
+        display: flex;
+    }
+
+
+
+/* 
+    estamos creando dos cajas
+    no pueden estar una a lado de la otra
+    ¿quien es el padre de la caja figure #logo y nav#navegadorPrincipal?
+        es header
+    */
+
+figure#logo
+    {
+        background-color: red;
+        height: 80px;
+        border: 1px solid black;
+    
+    /* a este hijo le vamos a decir  
+    
+    -las reparticiones entre 3 debemos hacer "flex-grow": 1 trozito
+        - Le asignamos 1 trozito a logo y 2 trozitos al nav. menu 
+        sencillo. 
+        - flex grow come o se alimenta de los espacios en blanco
+        - Hay otro que casi no utilizo flex grid 
+        --------     ----
+        |       |
+        |       |
+        -------
+
+    */
+
+    /* como figure#logo es el padre deberiamos posicionar al hijo por lo que hacemos */
+        display : flex;
+        justify-content : center;
+        align-items: center;
+    }
+
+figure#logo img.logo_imagen
+    {
+        width: 100%; 
+        min-width: 80%; /*no quiero que mi logo o imagen no bajes del 80%*/
+
+        /*
+            una forma
+                -el width es siempre el 100%
+                -y el min_width depende del logo. Si aguanta 50% pues 50%
+            Responsive
+                - este es una manera 
+                - la otra manera es el responsive con dos imagen 
+                - las personas hacen diferentes tamaños 
+            */
+    }
+
+/* Partes cuando estas utilizando la metodologia BEM a sus padres nunca se le da ningun tipo de clase */
+
+
+nav#navegacionPrincipal
+    {
+        padding: 10px 0px;    /* con padding tenemos una altura flexible*/
+        
+        background-color: green;
+        height: 80px;
+        border: 1px solid black;
+        /* a este hijo le vamos a decir  
+    
+    -las reparticiones entre 3 debemos hacer flex-grow: 2 trozito
+    
+    */
+    /* como figure#logo es el padre deberiamos posicionar al hijo por lo que hacemos */
+        display : flex;
+        justify-content : center;
+        align-items: center;
+
+
+    }
+
+
+/*controlando el hijo UL del NAV*/
+nav#navegacionPrincipal ul
+    {
+        display: flex;
+        width: 100%;
+        /* justify-content: space-between; */
+        justify-content: space-around;
+        
+    }
+
+/* 
+    ¿por que no se refleja o no funciona la linea de spacebetwwen?
+    ¿porque la estructura ul no puede hacer un space between ?
+        - cuando no saben que pasa, ir al navegador
+        -como espera que haga un space-between de lado a lado, si el no puede ir de lado a lado
+        - al ver el navegador, y ves que no tiene espacio para moverse 
+        -te das cuenta que le falta espacio por eso le agregas "width 
+
+*/
+
+
+
+/* BANNER  */

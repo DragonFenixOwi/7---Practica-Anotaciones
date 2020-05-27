@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos Web -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- HTML Meta Tags -->
+    <title>Plantilla</title>
+    <meta name="description" content="" />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="" />
+    <meta itemprop="description" content="" />
+    <meta itemprop="image" content="http://" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="http://" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SEAT" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="http://" />
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+
+    <!-- Nuestro Framework de CSS preferido, mi preferido es BULMA -->
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css" />    
+    
+    <!-- Nuestro CSS Compilado a través de SASS ó sin compilar solo CSS básico -->
+    <link rel="stylesheet" href="css/estilos.css" />
+    
+  </head>
+  <body>
+    <header>
+      <!--Bloque HEADER-->
+
+          <figure id="logo">
+            
+            <!--Bloque LOGO-->
+                <img src="" alt="">
+          
+                </figure>
+      
+              <nav id="navegacionPrincipal">
+            <!--Bloque Links de Navegación Principal
+                - Aqui no hay ninguna estructura, pero deberia.
+                -  con ul podria utilizar div, pero  se viene el div anidado con 
+                -el div es la ultima etiqueta que debes utilizar
+                -cosas importantes como los links que contienen mi web, no podemos hacer con div
+              -->
+                  <ul>
+                    <!-- Primer hijo "ul" es lo que controlariamos. La lista no -->
+                    <li><a href="link"></a></li>
+                    <li><a href="link"></a></li>
+                    <li><a href="link"></a></li>
+                    <li><a href="link"></a></li>
+                    <li><a href="link"></a></li>
+
+                  </ul>
+            </nav>
+          
+    </header>
+    
+     <!-- Plantilla Emmet 
+          - funciona para montarte rapidamente un html 
+          - div#banner>figure.anuncio>img+figcaption>p+button 
+          -A[href="#"]{link}*10
+        -->
+    
+    <!--Fuera del header:  esto hacemos para que siempre salga en todas las paginas salga el banner 
+      - lo que esta fuera del header y footer es dinamico
+      - si ves que solo el banner aparece en la primera pagina lo saco afuera del header
+    
+      - Si, estaria en la parte del main. Por que sabemos que main es el que cambia
+    -->
+    
+    <!-- Fuera de Header -->
+    <figure id="banner">
+
+        <img src="" alt="">
+    </figure>
+      
+    
+   
+    <div id="banner">
+      <figure class= "anuncio">
+
+      
+      </figure>
+
+      <img src="" alt="plato">
+        <figcaption>
+          <!-- digo figcaption porque es una imagen -->
+    
+        </figcaption>
+    
+  
+    </div>
+
+    <main>
+      <!--Bloque MAIN-->
+
+      
+          <section>
+            <!--
+             *
+             * Bloque SECTION
+             *
+            -->
+          </section>
+      
+          <article>
+            <!--Bloque ARTICLE
+             *
+            -->
+          </article>
+      
+    </main>
+
+    <footer>
+      <!--
+        *
+        * Bloque FOOTER
+        *
+        -->
+    </footer>
+  </body>
+</html>
