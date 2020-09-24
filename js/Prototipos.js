@@ -8,6 +8,32 @@
 */
 
 
+
+
+
+/*
+    SINTAXIS GENERAL 
+
+        - CLASS                                     -->  Padre que hereda 
+            - CONSTRUCTOR                           -->  Constructor del Padre.
+            - MÉTODOS                               -->  Se define la Acción.
+        
+
+        - HERENCIA                                  -->  Sintaxis   class ______ extends  _____  
+            - CONSTRUCTOR                           -->  Nativo de la clase "Herencia"
+            - SUPER CONSTRUCTOR                     -->  Se invoca al Constructor del Padre
+            - MÉTODO
+
+
+        - INSTANCIAS DEL CONSTRUCTOR PADRE          --> Se crea un objeto nuevo "new Persona_Owi"
+        - INSTANCIAS DEL CONSTRUCTOR HERENCA        --> Se crea un objeto nuevo "new Desarrollador" 
+        
+
+        - LLAMADA DEL MÉTODO                        --> Se ejecuta la Acción
+*/
+
+
+
 /*
     ---------------------------------------------------
         PROTOTIPOS - ANTES DEL ECMASCRIPT DE 2015
