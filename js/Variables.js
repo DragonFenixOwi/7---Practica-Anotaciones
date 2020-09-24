@@ -1,7 +1,9 @@
-/*
-    --------------
-        variables
-    --------------
+/* 
+    -------------------------------
+        Author : Osvaldo Aquino
+        NickName: Owi
+        VARIABLES
+    -------------------------------
 */
 
 /*const 
