@@ -1,3 +1,19 @@
+  
+/* 
+    --------------------------------------------------------
+        Author : Osvaldo Aquino
+        NickName: Owi
+        PROTOTIPOS - ECMASCRIPT ANTES Y DESPUES DEL 2015
+    --------------------------------------------------------
+*/
+
+
+/*
+    ---------------------------------------------------
+        PROTOTIPOS - ANTES DEL ECMASCRIPT DE 2015
+    ---------------------------------------------------
+*/
+
 /*
     PROTOTIPOS
         -JavaScript cambio mucho en poco tiempo. Y provoca cosas un poco desiguales
@@ -14,9 +30,9 @@
 
 
 /*
-    -------------------------------
-        constructor (clase pesona)
-    -------------------------------
+    ------------------------------------
+        CONSTRUCTOR ( CLASE PERSONA)
+    ------------------------------------
 */
 
 /*
@@ -29,6 +45,14 @@ function Persona (nombre, apellidos, edad, nacionalidad='Espanyola')
         this.edad= edad; 
         this.nacionalidad =nacionalidad;
     }
+
+
+/*
+    ---------------------------------
+        INSTANCIA DEL CONSTRUCTOR 
+    ---------------------------------
+*/
+
 
 //Instancias del constructor ( Instanciar de Persona)
 var diego = new Persona ('Diego', 'Torres');
@@ -55,10 +79,9 @@ var diego = new Persona ('Diego', 'Torres', 38);
 
 
 /*
-    --------------------------------
-    METODOS (prototipo de persona)
-    -------------------------------
-
+    -------------------------------------
+        METODOS (PROTOTIPO DE PERSONA)
+    -------------------------------------
 */
 
 
@@ -112,7 +135,12 @@ diego.saludar();
 
 
 
-//******************************************************************* 
+/******************************************************************************************************************/
+/*
+    ---------------------------------------------------
+        PROTOTIPOS - DESPUES DEL ECMASCRIPT DE 2015
+    ---------------------------------------------------
+*/
 
 
 /*
@@ -130,9 +158,19 @@ diego.saludar();
             
         
 */
+
+
+
 /*
     Estructura de una clase (que se llama prototipo en JavaScript)
         - La vamos a llmar clases (pero saber que siempre seran prototipos en el fondo)
+*/
+
+
+/*
+    -------------
+        CLASE
+    -------------
 */
 
 //dentro de la clase persona se genera un constructor
@@ -147,14 +185,24 @@ class Persona
                 this.nacionalidad =nacionalidad;
                 this.altura = altura; 
             }
-
+            
+            
+            /***** METODO ******/
+        
             //Metodos - Imaginar que podemos meter los metodos dentro de persona
                 //- los metodos son funciones
             saludar()
             {
                 console.log(`Hola me llamo ${this.nombre } ${apellidos}`) ;
             }
-        }
+     }
+
+/*
+    -----------------
+        HERENCIA
+    -----------------
+*/
+
 
             //Herencias en clases
                 /* -Haremos una herencia llamada desarrollador 
@@ -181,7 +229,11 @@ class Desarrollador extends Persona
 
     }
 
-
+/*
+    ------------------
+        INSTANCIAR
+    ------------------
+*/
 
 //Instancias del constructor ( Instanciar de Persona)
 
